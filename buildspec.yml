@@ -10,7 +10,7 @@ phases:
     commands:
       - echo "Deployment package 3.0"
       - cd lib
-      - zip -r9 ../deployment_package.zip .
+      - zip -r9 ../package.zip .
       - cd ..
       - zip -g package.zip lambda_handler.py
   post_build:
