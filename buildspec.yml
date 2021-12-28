@@ -8,7 +8,7 @@ phases:
       - pip install -r requirements.txt -t lib
   build:
     commands:
-      - echo "Deployment package 4.0"
+      - echo "Deployment package 5.0"
       - cd lib
       - zip -r9 ../package.zip .
       - cd ..
