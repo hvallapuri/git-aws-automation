@@ -16,5 +16,5 @@ phases:
   post_build:
     commands:
       - echo "Uploading lambda function"
-      - aws lambda update-function-code --function-name git-aws-automation --zip-file fileb://package.zip
+      - aws lambda create-or-update --function-name git-aws-automation2 --zip-file fileb://package.zip
       - echo "Done!"
